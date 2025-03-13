@@ -1,8 +1,9 @@
-import { Box, Container, Typography, Grid, Paper, IconButton, Dialog } from '@mui/material'
+import { Box, Container, Typography, Paper, Dialog, IconButton } from '@mui/material'
 import { styled } from '@mui/material/styles'
 import { motion, useScroll, useTransform } from 'framer-motion'
+import { useState } from 'react'
 import CloseIcon from '@mui/icons-material/Close'
-import { useState, useEffect } from 'react'
+// 需要先安装 swiper 包: npm install swiper
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 import 'swiper/css'
@@ -11,7 +12,7 @@ import 'swiper/css/pagination'
 
 // 英雄區塊樣式組件：全屏高度的背景圖片區域
 // 移除 HeroSection 中的 &::before 部分，修改標題樣式
-const HeroSection = styled(Box)(({ theme }) => ({
+const HeroSection = styled(Box)(() => ({
   height: '100vh',
   width: '100%',
   position: 'relative',
@@ -130,7 +131,7 @@ const Home = () => {
   const { scrollY } = useScroll()
   
   // 視差滾動效果
-  const y = useTransform(scrollY, [0, 500], [0, 150])
+  useTransform(scrollY, [0, 500], [0, 150])
 
   // 定義容器動畫變體
   const containerVariants = {

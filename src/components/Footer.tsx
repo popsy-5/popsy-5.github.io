@@ -1,9 +1,6 @@
 import { Box, Container, Typography, IconButton, Link } from '@mui/material'
 import { styled } from '@mui/material/styles'
 import InstagramIcon from '@mui/icons-material/Instagram'
-import FacebookIcon from '@mui/icons-material/Facebook'
-import EmailIcon from '@mui/icons-material/Email'
-
 // 自定義頁腳容器樣式
 const FooterContainer = styled(Box)(({ theme }) => ({
   backgroundColor: 'rgba(255, 255, 255, 0.85)',
@@ -18,16 +15,6 @@ const FooterContainer = styled(Box)(({ theme }) => ({
       transform: 'translateY(-2px)'
     }
   }
-}))
-
-// 自定義社交媒體圖標按鈕樣式
-const SocialButton = styled(IconButton)(({ theme }) => ({
-  color: theme.palette.primary.main,
-  '&:hover': {
-    backgroundColor: 'rgba(229, 178, 202, 0.1)',
-    transform: 'scale(1.1)'
-  },
-  transition: 'all 0.3s ease-in-out'
 }))
 
 // 頁腳組件
