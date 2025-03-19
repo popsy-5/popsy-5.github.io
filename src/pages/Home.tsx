@@ -16,7 +16,7 @@ const HeroSection = styled(Box)(() => ({
   height: '100vh',
   width: '100%',
   position: 'relative',
-  backgroundImage: 'url("./hero-image.jpg")',
+  backgroundImage: `url("${import.meta.env.BASE_URL}hero-image.jpg")`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   display: 'flex',
