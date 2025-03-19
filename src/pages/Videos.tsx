@@ -53,7 +53,7 @@ const videos: Video[] = [
     title: '2024 大甲盃排舞比賽 | 冠軍 | Popsy',
     description: 'Popsy首次奪得冠軍的比賽！感謝每一位成員的付出與努力，讓我們一起創造更多精彩時刻！',
     category: '比賽紀錄',
-    thumbnail: '/images/videos/dajia-cup-champion.jpg',
+    thumbnail: './images/videos/dajia-cup-champion.jpg',
     videoUrl: 'https://www.instagram.com/reel/C4vB5dsSLMR/?igsh=MXY3cjZxOG5wcDhzYQ==',
     platform: 'instagram',
     tags: ['大甲盃', '比賽', '冠軍', '街舞']
@@ -93,7 +93,7 @@ const videos: Video[] = [
     title: '2024 第30屆臺大盃 | 前導片 | 芭比娃娃的奇幻故事',
     description: '有一天，小女孩聽到敲門聲，打開門看到地上有個禮物盒，上面寫著Popsy，小女孩很困惑的把禮物拿回房間，拆開後看到好多漂亮的芭比娃娃，玩著玩著小女孩睡著了…小女孩與娃娃們的奇幻故事即將開始…',
     category: '其他',
-    thumbnail: '/images/videos/barbie-story.jpg',
+    thumbnail: './images/videos/barbie-story.jpg',
     videoUrl: 'https://www.instagram.com/reel/C6x6huGy0SO/?igsh=MW9ocmtpNmZtZjJ6ZA==',
     platform: 'instagram',
     tags: ['幕後', '創意', '舞蹈']
@@ -103,7 +103,7 @@ const videos: Video[] = [
     title: '颶風極限藝術工廠 | Showcase | Popsy',
     description: '颶風極限藝術工廠的Showcase',
     category: '演出紀錄',
-    thumbnail: '/images/videos/hurricane-showcase.jpg',
+    thumbnail: './images/videos/hurricane-showcase.jpg',
     videoUrl: 'https://www.instagram.com/reel/C5kr7BFyizL/?igsh=MTlrNHRqcnBjMzg5Yw==',
     platform: 'instagram',
     tags: ['表演', '舞蹈', 'Showcase']
@@ -113,7 +113,7 @@ const videos: Video[] = [
     title: 'Popsy | ILLIT - Magnetic Cover',
     description: 'Popsy蘿莉塔小姐姐們Cover ILLIT-Magnetic啦～～',
     category: '其他',
-    thumbnail: '/images/videos/illit-cover.jpg',
+    thumbnail: './images/videos/illit-cover.jpg',
     videoUrl: 'https://www.instagram.com/reel/C56e352STT8/?igsh=MXZsbXpqejYwdHFxaw==',
     platform: 'instagram',
     tags: ['舞蹈', 'Cover', '蘿莉塔']
@@ -123,7 +123,7 @@ const videos: Video[] = [
     title: 'showcase | 太邱派對',
     description: '太邱派對',
     category: '演出紀錄',
-    thumbnail: '/images/videos/taichiu-party.jpg',
+    thumbnail: './images/videos/taichiu-party.jpg',
     videoUrl: 'https://www.instagram.com/reel/DAqdfTKSKbi/?igsh=MTkxbjlvOHk4YWdwcw==',
     platform: 'instagram',
     tags: ['表演', '舞蹈', 'Showcase', '派對']
@@ -133,7 +133,7 @@ const videos: Video[] = [
     title: 'showcase | Especial Unity Party',
     description: 'Especial Unity Party',
     category: '演出紀錄',
-    thumbnail: '/images/videos/especial-unity-party.jpg',
+    thumbnail: './images/videos/especial-unity-party.jpg',
     videoUrl: 'https://www.instagram.com/reel/C8tqqldycZy/?igsh=NHBhdTUxaWRteW4=',
     platform: 'instagram',
     tags: ['表演', '舞蹈', 'Showcase', '派對']

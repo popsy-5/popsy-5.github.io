@@ -8,8 +8,10 @@ const __dirname = dirname(__filename)
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) => ({
-  // 根據環境動態設置 base 路徑
   base: command === 'serve' ? '/' : '/popsy-5.github.io/',
+  define: {
+    'import.meta.env.BASE_URL': JSON.stringify(command === 'serve' ? '/' : '/popsy-5.github.io/')
+  },
   plugins: [react()],
   resolve: {
     alias: {

@@ -16,7 +16,7 @@ const HeroSection = styled(Box)(() => ({
   height: '100vh',
   width: '100%',
   position: 'relative',
-  backgroundImage: 'url("/hero-image.jpg")',
+  backgroundImage: 'url("./hero-image.jpg")',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   display: 'flex',
@@ -53,43 +53,43 @@ const MotionContainer = styled(motion.div)({
 const carouselData = [
   {
     id: 1,
-    image: '/galleryimages/台大盃1.jpg',
+    image: './galleryimages/台大盃1.jpg',
     title: '2024 臺大盃',
     description: '臺大盃排舞比賽成功晉級決賽'
   },
   {
     id: 2,
-    image: '/galleryimages/Hero 4 who1.jpg',
+    image: './galleryimages/Hero 4 who1.jpg',
     title: '2024 Hero4who',
     description: 'Popsy參加中區初賽並成功晉級決賽'
   },
   {
     id: 3,
-    image: '/galleryimages/台大盃3.jpg',
+    image: './galleryimages/台大盃3.jpg',
     title: '2024 臺大盃',
     description: '獨特的蘿莉塔風格'
   },
   {
     id: 4,
-    image: '/galleryimages/Hero 4 who2.jpg',
+    image: './galleryimages/Hero 4 who2.jpg',
     title: '2024 Hero4who',
     description: '在舞台上發光發熱'
   },
   {
     id: 5,
-    image: '/galleryimages/Hero 4 who3.jpg',
+    image: './galleryimages/Hero 4 who3.jpg',
     title: '2024 Hero4who',
     description: '每一場演出都盡力詮釋舞蹈'
   },
   {
     id: 6,
-    image: '/galleryimages/台大盃2.jpg',
+    image: './galleryimages/台大盃2.jpg',
     title: '2024 臺大盃',
     description: '展現魅力'
   },
   {
     id: 7,
-    image: '/galleryimages/台大盃4.jpg',
+    image: './galleryimages/台大盃4.jpg',
     title: '2024 臺大盃',
     description: '持續進步的Popsy'
   }
