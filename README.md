@@ -15,6 +15,21 @@
 - **圖標庫**: @mui/icons-material 5.14.18
 - **組件庫**: @mui/lab 6.0.0-beta.30
 
+## 開發環境配置
+
+### 必要條件
+
+- Node.js >= 14.0.0
+- npm >= 6.14.0
+- Git
+
+### IDE 推薦
+
+- Visual Studio Code
+  - ESLint 插件
+  - Prettier 插件
+  - TypeScript 插件
+
 ## 項目結構
 
 ```
@@ -42,25 +57,51 @@ src/
 
 ## 安裝和運行
 
-1. 安裝依賴：
+1. 克隆項目：
+```bash
+git clone https://github.com/popsy-5/popsy-5.github.io.git
+cd popsy-5.github.io
+```
+
+2. 安裝依賴：
 ```bash
 npm install
 ```
 
-2. 開發模式運行：
+3. 開發模式運行：
 ```bash
 npm run dev
 ```
 
-3. 生產環境構建：
+4. 生產環境構建：
 ```bash
 npm run build
 ```
 
-4. 預覽生產構建：
+5. 預覽生產構建：
 ```bash
 npm run preview
 ```
+
+## 部署說明
+
+### GitHub Pages 部署
+
+1. 確保 `vite.config.ts` 中的 `base` 配置正確：
+```typescript
+export default defineConfig({
+  base: '/popsy-5.github.io/',
+  // 其他配置...
+})
+```
+
+2. 在 GitHub 倉庫設置中啟用 GitHub Pages：
+   - 進入倉庫設置 > Pages
+   - Source 選擇 GitHub Actions
+
+3. 項目已配置自動部署工作流（`.github/workflows/deploy.yml`）：
+   - 當推送到 main 分支時自動觸發部署
+   - 構建產物會自動部署到 gh-pages 分支
 
 ## 開發指南
 
@@ -77,12 +118,40 @@ npm run preview
 - 排版樣式
 - 組件默認樣式
 
+## 代碼規範
+
+### TypeScript 規範
+
+- 使用 interface 而不是 type 定義對象類型
+- 為所有組件和函數添加類型註解
+- 避免使用 any 類型
+
+### React 最佳實踐
+
+- 使用函數式組件和 Hooks
+- 組件文件使用 .tsx 擴展名
+- 遵循組件命名規範（PascalCase）
+
+### 樣式規範
+
+- 使用 MUI 的 styled 組件或 sx 屬性
+- 遵循 Material Design 設計規範
+- 保持樣式的可維護性和復用性
+
 ## 維護說明
 
 - 代碼採用 ESLint 進行規範檢查
 - 使用 TypeScript 確保類型安全
 - 組件採用函數式組件和 Hooks
 - 遵循 Material-UI 的設計規範
+
+## 貢獻指南
+
+1. Fork 項目到自己的倉庫
+2. 創建新的功能分支
+3. 提交代碼更改
+4. 確保代碼通過 lint 檢查
+5. 提交 Pull Request
 
 ## 瀏覽器支持
 
@@ -96,3 +165,4 @@ npm run preview
 - 開發時請確保 Node.js 版本 >= 14
 - 請遵循項目既定的代碼風格和組件結構
 - 提交代碼前請運行 lint 檢查
+- 確保所有提交都有清晰的描述信息
