@@ -9,10 +9,10 @@ const __dirname = dirname(__filename)
 // https://vitejs.dev/config/
 export default defineConfig(({ command, mode }) => ({
   // 根據不同環境設置不同的 base 路徑
-  base: mode === 'vercel' ? '/' : command === 'serve' ? '/' : '/popsy-5.github.io/',
+  base: mode === 'vercel' ? '/' : './',
   define: {
     'import.meta.env.BASE_URL': JSON.stringify(
-      mode === 'vercel' ? '/' : command === 'serve' ? '/' : '/popsy-5.github.io/'
+      mode === 'vercel' ? '/' : './'
     )
   },
   plugins: [react()],
