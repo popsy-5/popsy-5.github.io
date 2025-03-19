@@ -29,6 +29,14 @@ export default defineConfig(({ command }) => ({
     sourcemap: true,
     chunkSizeWarningLimit: 1500,
     rollupOptions: {
+      external: [
+        'swiper',
+        'swiper/react',
+        'swiper/modules',
+        'swiper/css',
+        'swiper/css/navigation',
+        'swiper/css/pagination'
+      ],
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom', 'react-router-dom'],
