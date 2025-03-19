@@ -7,10 +7,13 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
 // https://vitejs.dev/config/
-export default defineConfig(({ command }) => ({
-  base: command === 'serve' ? '/' : '/popsy-5.github.io/',
+export default defineConfig(({ command, mode }) => ({
+  // 根據不同環境設置不同的 base 路徑
+  base: mode === 'vercel' ? '/' : command === 'serve' ? '/' : '/popsy-5.github.io/',
   define: {
-    'import.meta.env.BASE_URL': JSON.stringify(command === 'serve' ? '/' : '/popsy-5.github.io/')
+    'import.meta.env.BASE_URL': JSON.stringify(
+      mode === 'vercel' ? '/' : command === 'serve' ? '/' : '/popsy-5.github.io/'
+    )
   },
   plugins: [react()],
   resolve: {
@@ -29,14 +32,7 @@ export default defineConfig(({ command }) => ({
     sourcemap: true,
     chunkSizeWarningLimit: 1500,
     rollupOptions: {
-      external: [
-        'swiper',
-        'swiper/react',
-        'swiper/modules',
-        'swiper/css',
-        'swiper/css/navigation',
-        'swiper/css/pagination'
-      ],
+      // 移除 external 配置，讓 Vercel 正確打包所有依賴
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom', 'react-router-dom'],
