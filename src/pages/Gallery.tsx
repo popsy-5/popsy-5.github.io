@@ -135,13 +135,15 @@ const Gallery = () => {
             >
               <CardMedia
                 component="img"
-                height="225"
-                image={photo.image}
-                alt={photo.title}
                 sx={{
+                  width: '100%',
+                  height: 0,
+                  paddingTop: '100%', // 1:1 寬高比
                   objectFit: 'cover',
                   objectPosition: 'center'
                 }}
+                image={photo.image}
+                alt={photo.title}
               />
             </Card>
           </Grid>

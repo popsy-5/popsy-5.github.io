@@ -20,7 +20,7 @@ const HeroSection = styled(Box)(() => ({
   margin: 0,
   padding: 0,
   backgroundImage: `url("${import.meta.env.BASE_URL}hero-image.jpg")`,
-  backgroundSize: '80% auto',
+  backgroundSize: '100% auto',
   backgroundPosition: 'center',
   backgroundColor: 'transparent',
   backgroundRepeat: 'no-repeat',
@@ -30,12 +30,12 @@ const HeroSection = styled(Box)(() => ({
   overflow: 'hidden',
   transition: 'transform 0.3s ease-out',
   '@media (max-width: 960px)': {
-    backgroundSize: '90% auto',
+    backgroundSize: '120% auto',
     margin: 0,
     padding: 0
   },
   '@media (max-width: 600px)': {
-    backgroundSize: '95% auto',
+    backgroundSize: '140% auto',
     margin: 0,
     padding: 0
   },
