@@ -256,9 +256,9 @@ const Videos = () => {
             >
               <CloseIcon />
             </IconButton>
-            <Grid container spacing={2} sx={{ p: 2 }}>
-              <Grid item xs={12} md={8}>
-                <Box sx={{ position: 'relative', paddingTop: '56.25%' }}>
+            <Grid container spacing={2} sx={{ p: { xs: 1, sm: 2 } }}>
+              <Grid item xs={12} lg={8}>
+                <Box sx={{ position: 'relative', paddingTop: { xs: '75%', sm: '56.25%' } }}>
                   <iframe
                     style={{
                       position: 'absolute',
@@ -275,30 +275,34 @@ const Videos = () => {
                   />
                 </Box>
                 <Box sx={{ mt: 2 }}>
-                  <Typography variant="h5" gutterBottom>
+                  <Typography variant="h5" gutterBottom sx={{ fontSize: { xs: '1.2rem', sm: '1.5rem' } }}>
                     {selectedVideo.title}
                   </Typography>
-                  <Typography paragraph>{selectedVideo.description}</Typography>
-                  <Typography variant="body2" color="text.secondary">
+                  <Typography paragraph sx={{ fontSize: { xs: '0.9rem', sm: '1rem' } }}>
+                    {selectedVideo.description}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary" sx={{ fontSize: { xs: '0.8rem', sm: '0.875rem' } }}>
                     標籤：{selectedVideo.tags.join('、')}
                   </Typography>
                 </Box>
               </Grid>
-              <Grid item xs={12} md={4}>
-                <Typography variant="h6" gutterBottom>
+              <Grid item xs={12} lg={4}>
+                <Typography variant="h6" gutterBottom sx={{ fontSize: { xs: '1.1rem', sm: '1.25rem' } }}>
                   相關影片
                 </Typography>
-                <List>
+                <List sx={{ display: { xs: 'flex', lg: 'block' }, overflowX: { xs: 'auto', lg: 'visible' }, pb: 1 }}>
                   {relatedVideos.map((video) => (
                     <ListItem
                       key={video.id}
                       button
                       onClick={() => handleVideoClick(video)}
                       sx={{
+                        flex: { xs: '0 0 300px', lg: '1 1 auto' },
+                        mr: { xs: 2, lg: 0 },
                         transition: 'all 0.3s ease',
                         '&:hover': {
                           backgroundColor: 'rgba(229, 178, 202, 0.1)',
-                          transform: 'translateX(8px)'
+                          transform: { xs: 'translateY(-4px)', lg: 'translateX(8px)' }
                         }
                       }}
                     >
@@ -308,11 +312,15 @@ const Videos = () => {
                           height="120"
                           image={video.thumbnail}
                           alt={video.title}
-                          sx={{ borderRadius: 1, mb: 1 }}
+                          sx={{ 
+                            borderRadius: 1, 
+                            mb: 1,
+                            objectFit: 'cover'
+                          }}
                         />
                         <ListItemText
-                          primary={video.title}
-                          secondary={video.description}
+                          primary={<Typography noWrap sx={{ fontSize: { xs: '0.9rem', sm: '1rem' } }}>{video.title}</Typography>}
+                          secondary={<Typography noWrap sx={{ fontSize: { xs: '0.8rem', sm: '0.875rem' } }}>{video.description}</Typography>}
                         />
                       </Box>
                     </ListItem>

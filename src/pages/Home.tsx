@@ -12,18 +12,33 @@ import 'swiper/css/pagination'
 
 // 英雄區塊樣式組件：全屏高度的背景圖片區域
 // 移除 HeroSection 中的 &::before 部分，修改標題樣式
+// 修改 HeroSection 樣式
 const HeroSection = styled(Box)(() => ({
-  height: '100vh',
+  minHeight: '100vh',
   width: '100%',
   position: 'relative',
+  margin: 0,
+  padding: 0,
   backgroundImage: `url("${import.meta.env.BASE_URL}hero-image.jpg")`,
-  backgroundSize: 'cover',
+  backgroundSize: '80% auto',
   backgroundPosition: 'center',
+  backgroundColor: 'transparent',
+  backgroundRepeat: 'no-repeat',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
   overflow: 'hidden',
   transition: 'transform 0.3s ease-out',
+  '@media (max-width: 960px)': {
+    backgroundSize: '90% auto',
+    margin: 0,
+    padding: 0
+  },
+  '@media (max-width: 600px)': {
+    backgroundSize: '95% auto',
+    margin: 0,
+    padding: 0
+  },
   '&:hover': {
     transform: 'scale(1.02)'
   }
@@ -164,67 +179,11 @@ const Home = () => {
             transition={{ duration: 0.8 }}
             style={{ width: '100%' }}  // 確保標題容器寬度為100%
           >
-            <Typography
-              variant="h1"
-              component="h1"
-              sx={{
-                color: 'white',
-                fontWeight: 700,
-                textAlign: 'center',
-                mb: 3,
-                fontSize: { xs: '2.5rem', md: '4rem' },
-                textShadow: `
-                  -1px -1px 0 #FFB6C1,
-                  1px -1px 0 #FFC0CB,
-                  -1px 1px 0 #FFE4E1,
-                  1px 1px 0 #FFC0CB,
-                  2px 2px 4px rgba(255, 182, 193, 0.4),
-                  4px 4px 8px rgba(255, 192, 203, 0.3),
-                  0 0 10px rgba(255, 192, 203, 0.6),
-                  0 0 20px rgba(255, 182, 193, 0.4),
-                  0 0 30px rgba(255, 228, 225, 0.3)
-                `,
-                background: 'linear-gradient(45deg, #FFC0CB, #FFE4E1, #FFB6C1)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                filter: 'drop-shadow(2px 2px 4px rgba(0,0,0,0.3)) brightness(1.1)'
-              }}
-            >
-              Popsy
-            </Typography>
-            {/* 副標題 */}
-            <Typography
-              variant="h4"
-              sx={{
-                color: 'white',
-                textAlign: 'center',
-                mb: 4,
-                fontSize: { xs: '1.5rem', md: '2rem' },
-                letterSpacing: '0.2em',  // 添加文字間距
-                textShadow: `
-                  -0.5px -0.5px 0 #FFB6C1,
-                  0.5px -0.5px 0 #FFC0CB,
-                  -0.5px 0.5px 0 #FFE4E1,
-                  0.5px 0.5px 0 #FFC0CB,
-                  1px 1px 3px rgba(255, 182, 193, 0.4),
-                  2px 2px 4px rgba(255, 192, 203, 0.3),
-                  0 0 8px rgba(255, 192, 203, 0.5),
-                  0 0 15px rgba(255, 182, 193, 0.3)
-                `,
-                background: 'linear-gradient(45deg, #FFC0CB, #FFE4E1, #FFB6C1)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                filter: 'drop-shadow(1px 1px 3px rgba(0,0,0,0.3)) brightness(1.1)'
-              }}
-            >
-              用舞蹈傳遞熱情與美好
-            </Typography>
           </motion.div>
         </Container>
       </HeroSection>
-
       {/* 輪播圖區塊 */}
-      <Box sx={{ width: '100%', height: '70vh', position: 'relative' }}>
+      <Box sx={{ width: '100%', height: '70vh', position: 'relative', margin: 0, padding: 0 }}>
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           navigation
@@ -286,7 +245,7 @@ const Home = () => {
 
 
       {/* 成就展示區塊 */}
-      <Box sx={{ py: 8, bgcolor: 'background.default' }}>
+      <Box sx={{ py: 8, bgcolor: 'background.default', margin: 0 }}>
         <Container maxWidth="lg">
           <MotionContainer
             variants={containerVariants}
