@@ -14,33 +14,28 @@ import 'swiper/css/pagination'
 // 移除 HeroSection 中的 &::before 部分，修改標題樣式
 // 修改 HeroSection 樣式
 const HeroSection = styled(Box)(() => ({
-  minHeight: '100vh',
   width: '100%',
   position: 'relative',
   margin: 0,
   padding: 0,
   backgroundImage: `url("${import.meta.env.BASE_URL}hero-image.jpg")`,
-  backgroundSize: '100% auto',
+  backgroundSize: 'contain',  // 改為 contain 確保圖片完整顯示
   backgroundPosition: 'center',
   backgroundColor: 'transparent',
   backgroundRepeat: 'no-repeat',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  overflow: 'hidden',
-  transition: 'transform 0.3s ease-out',
+  minHeight: '90vh',  // 改用 minHeight
+  maxHeight: '90vh',  // 限制最大高度
+  overflow: 'visible',  // 允許內容溢出
   '@media (max-width: 960px)': {
-    backgroundSize: '120% auto',
-    margin: 0,
-    padding: 0
+    minHeight: '70vh',
+    backgroundSize: 'contain'
   },
   '@media (max-width: 600px)': {
-    backgroundSize: '140% auto',
-    margin: 0,
-    padding: 0
-  },
-  '&:hover': {
-    transform: 'scale(1.02)'
+    minHeight: '50vh',
+    backgroundSize: 'contain'
   }
 }))
 
@@ -216,8 +211,10 @@ const Home = () => {
                   src={item.image}
                   sx={{
                     width: '100%',
-                    height: '100%',
-                    objectFit: 'cover'
+                    height: 'auto',  // 改為自動高度
+                    maxHeight: '90vh',  // 限制最大高度
+                    objectFit: 'contain',  // 改為 contain
+                    objectPosition: 'center'
                   }}
                 />
                 <Box
