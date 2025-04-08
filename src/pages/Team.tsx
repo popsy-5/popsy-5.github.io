@@ -32,6 +32,11 @@ const Team = () => {
       year: '2024',
       title: '第30屆臺大盃決賽',
       description: '北上參加臺大盃排舞比賽成功晉級決賽。'
+    },
+    {
+      year: '2025',
+      title: '第31屆臺大盃初賽',
+      description: '再次挑戰臺大盃排舞比賽。'
     }
   ]
 
