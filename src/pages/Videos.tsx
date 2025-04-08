@@ -49,6 +49,16 @@ const getVideoEmbedUrl = (url: string, platform: Video['platform']): string => {
 // 模擬視頻數據
 const videos: Video[] = [
   {
+    id: 10,
+    title: '2025 第31屆臺大盃 | 初賽 | Popsy',
+    description: '2025臺大盃舞蹈比賽 初賽',
+    category: '比賽紀錄',
+    thumbnail: 'https://img.youtube.com/vi/F_6yW4F4Ugg/maxresdefault.jpg',
+    videoUrl: 'https://youtu.be/F_6yW4F4Ugg',
+    platform: 'youtube',
+    tags: ['臺大盃', '比賽', '街舞']
+  },
+  {
     id: 9,
     title: '2024 大甲盃排舞比賽 | 冠軍 | Popsy',
     description: 'Popsy首次奪得冠軍的比賽！感謝每一位成員的付出與努力，讓我們一起創造更多精彩時刻！',
