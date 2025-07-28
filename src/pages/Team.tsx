@@ -41,7 +41,7 @@ const Team = () => {
     {
       year: '2025年7月19日',
       title: '第22屆新光盃熱門街舞大賽 UN組初賽',
-      description: '成功晉級決賽。'
+      description: '以第二名晉級決賽。'
     }
   ]
 
