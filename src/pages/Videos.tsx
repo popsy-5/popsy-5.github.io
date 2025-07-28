@@ -147,6 +147,16 @@ const videos: Video[] = [
     videoUrl: 'https://www.instagram.com/reel/C8tqqldycZy/?igsh=NHBhdTUxaWRteW4=',
     platform: 'instagram',
     tags: ['表演', '舞蹈', 'Showcase', '派對']
+  },
+  {
+    id: 10,
+    title: '2025 第22屆新光盃熱門街舞大賽 | UN組初賽 | Popsy',
+    description: '第22屆新光盃熱門街舞大賽 UN組初賽',
+    category: '比賽紀錄',
+    thumbnail: './images/videos/shinkong.jpg',
+    videoUrl: 'https://www.instagram.com/reel/DMValLszJs9/?igsh=MWl1aG8zcHV4Z3cxeg==',
+    platform: 'instagram',
+    tags: ['新光盃', '比賽', '街舞']
   }
 ]
 

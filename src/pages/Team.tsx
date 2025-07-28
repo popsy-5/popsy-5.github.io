@@ -37,6 +37,11 @@ const Team = () => {
       year: '2025',
       title: '第31屆臺大盃初賽',
       description: '再次挑戰臺大盃排舞比賽。'
+    },
+    {
+      year: '2025年7月19日',
+      title: '第22屆新光盃熱門街舞大賽 UN組初賽',
+      description: '成功晉級決賽。'
     }
   ]
 
