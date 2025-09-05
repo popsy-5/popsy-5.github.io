@@ -49,8 +49,38 @@ const getVideoEmbedUrl = (url: string, platform: Video['platform']): string => {
 // 模擬視頻數據
 const videos: Video[] = [
   {
+    id: 13,
+    title: '2025 POPSY | 第20屆捷運盃街舞大賽｜排舞 ADULT 組 (初賽)',
+    description: 'POPSY第20屆捷運盃街舞大賽｜排舞 ADULT 組 (初賽)',
+    category: '比賽紀錄',
+    thumbnail: 'https://img.youtube.com/vi/M-SN-XtHvzI/maxresdefault.jpg',
+    videoUrl: 'https://youtu.be/M-SN-XtHvzI?si=gmyhWkuzHAoKCipu',
+    platform: 'youtube',
+    tags: ['比賽', '舞蹈', '精彩片段','街舞']
+  },
+  {
+    id: 11,
+    title: '2025 第22屆新光盃熱門街舞大賽 | UN組初賽 | POPSY',
+    description: '第22屆新光盃熱門街舞大賽 UN組初賽',
+    category: '比賽紀錄',
+    thumbnail: './images/videos/shinkong.jpg',
+    videoUrl: 'https://www.instagram.com/reel/DMValLszJs9/?igsh=MWl1aG8zcHV4Z3cxeg==',
+    platform: 'instagram',
+    tags: ['新光盃', '比賽', '街舞']
+  },
+  {
+    id: 12,
+    title: '2025 第22屆新光盃熱門街舞大賽 | UN組決賽 | POPSY',
+    description: '第22屆新光盃熱門街舞大賽 UN組決賽',
+    category: '比賽紀錄',
+    thumbnail: 'https://img.youtube.com/vi/44B1rKnsgs0/maxresdefault.jpg',
+    videoUrl: 'https://youtu.be/44B1rKnsgs0?si=N4Gf22SJH0CtFBci',
+    platform: 'youtube',
+    tags: ['新光盃', '比賽', '街舞']
+  },
+  {
     id: 10,
-    title: '2025 第31屆臺大盃 | 初賽 | Popsy',
+    title: '2025 第31屆臺大盃 | 初賽 | POPSY',
     description: '2025臺大盃舞蹈比賽 初賽',
     category: '比賽紀錄',
     thumbnail: 'https://img.youtube.com/vi/F_6yW4F4Ugg/maxresdefault.jpg',
@@ -60,7 +90,7 @@ const videos: Video[] = [
   },
   {
     id: 9,
-    title: '2024 大甲盃排舞比賽 | 冠軍 | Popsy',
+    title: '2024 大甲盃排舞比賽 | 冠軍 | POPSY',
     description: 'Popsy首次奪得冠軍的比賽！感謝每一位成員的付出與努力，讓我們一起創造更多精彩時刻！',
     category: '比賽紀錄',
     thumbnail: './images/videos/dajia-cup-champion.jpg',
@@ -70,7 +100,7 @@ const videos: Video[] = [
   },
   {
     id: 1,
-    title: '2024 第30屆臺大盃 | 初賽 | Popsy',
+    title: '2024 第30屆臺大盃 | 初賽 | POPSY',
     description: '2024臺大盃舞蹈比賽 初賽',
     category: '比賽紀錄',
     thumbnail: 'https://img.youtube.com/vi/UqQKU31xScY/maxresdefault.jpg',
@@ -80,7 +110,7 @@ const videos: Video[] = [
   },
   {
     id: 2,
-    title: '2024 第30屆臺大盃 | 決賽 | Popsy',
+    title: '2024 第30屆臺大盃 | 決賽 | POPSY',
     description: '2024臺大盃舞蹈比賽 決賽',
     category: '比賽紀錄',
     thumbnail: 'https://img.youtube.com/vi/Y90Re98KTdE/maxresdefault.jpg',
@@ -90,7 +120,7 @@ const videos: Video[] = [
   },
   {
     id: 3,
-    title: '2024 HERO 4 WHO國際舞蹈大賽 | 全國總決賽 | Popsy',
+    title: '2024 HERO 4 WHO國際舞蹈大賽 | 全國總決賽 | POPSY',
     description: '2024臺大盃舞蹈比賽街舞 | 排舞社會組',
     category: '比賽紀錄',
     thumbnail: 'https://img.youtube.com/vi/CSOsSYXFfh0/maxresdefault.jpg',
@@ -110,7 +140,7 @@ const videos: Video[] = [
   },
   {
     id: 5,
-    title: '颶風極限藝術工廠 | Showcase | Popsy',
+    title: '颶風極限藝術工廠 | Showcase | POPSY',
     description: '颶風極限藝術工廠的Showcase',
     category: '演出紀錄',
     thumbnail: './images/videos/hurricane-showcase.jpg',
@@ -147,16 +177,6 @@ const videos: Video[] = [
     videoUrl: 'https://www.instagram.com/reel/C8tqqldycZy/?igsh=NHBhdTUxaWRteW4=',
     platform: 'instagram',
     tags: ['表演', '舞蹈', 'Showcase', '派對']
-  },
-  {
-    id: 10,
-    title: '2025 第22屆新光盃熱門街舞大賽 | UN組初賽 | Popsy',
-    description: '第22屆新光盃熱門街舞大賽 UN組初賽',
-    category: '比賽紀錄',
-    thumbnail: './images/videos/shinkong.jpg',
-    videoUrl: 'https://www.instagram.com/reel/DMValLszJs9/?igsh=MWl1aG8zcHV4Z3cxeg==',
-    platform: 'instagram',
-    tags: ['新光盃', '比賽', '街舞']
   }
 ]
 

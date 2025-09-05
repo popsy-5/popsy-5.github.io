@@ -16,7 +16,7 @@ const Team = () => {
     {
       year: '2023',
       title: '團隊成立',
-      description: '在共同的理念下，我們組建了Popsy表演團隊。'
+      description: '在共同的理念下，我們組建了POPSY表演團隊。'
     },
     {
       year: '2024',
@@ -26,7 +26,7 @@ const Team = () => {
     {
       year: '2024',
       title: 'Hero4who決賽',
-      description: 'Popsy參加中區初賽並成功晉級決賽。'
+      description: 'POPSY參加中區初賽並成功晉級決賽。'
     },
     {
       year: '2024',
@@ -42,6 +42,16 @@ const Team = () => {
       year: '2025年7月19日',
       title: '第22屆新光盃熱門街舞大賽 UN組初賽',
       description: '以第二名晉級決賽。'
+    },
+    {
+      year: '2025年8月16日',
+      title: '第22屆新光盃熱門街舞大賽 UN組決賽',
+      description: '榮獲評審團獎。'
+    },
+    {
+      year: '2025年8月31日',
+      title: '第20屆捷運盃街舞大賽｜排舞 ADULT 組 (初賽)：POPSY ',
+      description: '榮獲舞出勇敢獎。'
     }
   ]
 
@@ -66,7 +76,7 @@ const Team = () => {
               關於我們
             </Typography>
             <Typography paragraph sx={{ whiteSpace: 'pre-line', mb: 2 }}>
-              你們相信生活中總會有不期而遇的美好嗎？
+              你們相信生活中總會有不期而遇的美好的嗎？
             </Typography>
             <Typography paragraph sx={{ whiteSpace: 'pre-line', mb: 2 }}>
               我們的團名「𝑷𝑶𝑷𝑺𝒀」

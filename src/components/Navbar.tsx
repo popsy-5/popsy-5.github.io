@@ -140,7 +140,7 @@ const Navbar = () => {
               textDecoration: 'none'
             }}
           >
-            Popsy
+            POPSY
           </Typography>
 
           {/* 桌面端導航菜單 */}

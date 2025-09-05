@@ -1,6 +1,7 @@
 import { Box, Container, Typography, Link } from '@mui/material'
 import { styled } from '@mui/material/styles'
 import InstagramIcon from '@mui/icons-material/Instagram'
+import EmailIcon from '@mui/icons-material/Email'
 // 自定義頁腳容器樣式
 const FooterContainer = styled(Box)(({ theme }) => ({
   backgroundColor: 'rgba(255, 255, 255, 0.85)',
@@ -47,9 +48,11 @@ const Footer = () => {
             </Typography>
             <Box sx={{ 
               display: 'flex', 
-              flexDirection: 'row',
-              justifyContent: 'center'
+              flexDirection: { xs: 'column', sm: 'row' },
+              justifyContent: 'center',
+              gap: { xs: 1, sm: 2 }
             }}>
+              {/* Instagram 聯絡方式 */}
               <Box sx={{
                 display: 'flex',
                 alignItems: 'center',
@@ -84,6 +87,41 @@ const Footer = () => {
                   </Typography>
                 </Link>
               </Box>
+              
+              {/* Gmail 聯絡方式 */}
+              <Box sx={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 2,
+                transition: 'all 0.3s ease-in-out',
+                p: 1.5,
+                borderRadius: 1,
+                '&:hover': {
+                  transform: 'translateX(8px)',
+                  color: 'primary.main',
+                  background: 'rgba(229, 178, 202, 0.1)'
+                }
+              }}>
+                <EmailIcon sx={{ 
+                  fontSize: 24,
+                  color: 'rgb(232, 71, 157)'
+                }} />
+                <Link
+                  href="mailto:popsy0524@gmail.com"
+                  sx={{
+                    textDecoration: 'none',
+                    color: 'inherit',
+                    fontWeight: 500,
+                    '&:hover': {
+                      color: 'primary.main'
+                    }
+                  }}
+                >
+                  <Typography variant="body1" sx={{ fontWeight: 500 }}>
+                    popsy0524@gmail.com
+                  </Typography>
+                </Link>
+              </Box>
             </Box>
           </Box>
 
@@ -97,7 +135,7 @@ const Footer = () => {
           align="center"
           sx={{ mt: 1 }}  // 縮短與上方的間距
         >
-          © {new Date().getFullYear()} Popsy Dance. All rights reserved.
+          © {new Date().getFullYear()} POPSY Dance. All rights reserved.
         </Typography>
       </Container>
     </FooterContainer>

@@ -71,7 +71,7 @@ const carouselData = [
     id: 2,
     image: './galleryimages/Hero 4 who1.jpg',
     title: '2024 Hero4who',
-    description: 'Popsy參加中區初賽並成功晉級決賽'
+    description: 'POPSY參加中區初賽並成功晉級決賽'
   },
   {
     id: 3,
@@ -101,7 +101,7 @@ const carouselData = [
     id: 7,
     image: './galleryimages/台大盃4.jpg',
     title: '2024 臺大盃',
-    description: '持續進步的Popsy'
+    description: '持續進步的POPSY'
   }
 ]
 
