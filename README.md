@@ -2,7 +2,7 @@
 
 ## 項目概述
 
-這是一個使用 React + TypeScript + Material-UI 開發的舞蹈團隊展示網站。網站包含團隊介紹、成員展示、照片集和視頻展示等功能，採用響應式設計，確保在不同設備上都能有良好的顯示效果。
+這是一個使用 React + TypeScript + Material-UI 開發的舞蹈團隊展示網站。網站包含團隊介紹、成員展示、照片集和視頻展示等功能，採用響應式設計，確保在不同設備上都能有良好的顯示效果。本網站已針對搜索引擎優化，包含完整的SEO配置，有助於提高在搜索引擎中的可見度。
 
 ## 技術棧
 
@@ -103,6 +103,35 @@ export default defineConfig({
    - 當推送到 main 分支時自動觸發部署
    - 構建產物會自動部署到 gh-pages 分支
 
+### SEO 配置
+
+1. **Sitemap 配置**：
+   - 項目根目錄已包含 `sitemap.xml` 文件
+   - 每次構建時會自動更新網站地圖
+   - 確保所有頁面都被正確索引
+
+2. **Robots.txt 配置**：
+   - 項目根目錄已包含 `robots.txt` 文件
+   - 默認允許所有搜索引擎爬蟲訪問
+   - 可根據需要調整爬蟲權限
+
+3. **搜索引擎提交**：
+   - **Google Search Console**：
+     - 使用 HTML 文件驗證：已包含 `google-site-verification.html`
+     - 提交 sitemap.xml 到 Google Search Console
+     - 監控索引狀態和搜索表現
+   
+   - **Bing Webmaster Tools**：
+     - 使用相同的 HTML 驗證文件或 meta 標籤驗證
+     - 提交 sitemap.xml 到 Bing Webmaster Tools
+     - 監控索引狀態和搜索表現
+
+4. **結構化數據**：
+   - 項目包含 `public/structured-data.json` 文件
+   - 已實現 JSON-LD 格式的結構化數據
+   - 包含組織、網站和活動等相關信息
+   - 有助於在搜索結果中顯示富媒體結果
+
 ## 開發指南
 
 ### 添加新頁面
@@ -166,3 +195,27 @@ export default defineConfig({
 - 請遵循項目既定的代碼風格和組件結構
 - 提交代碼前請運行 lint 檢查
 - 確保所有提交都有清晰的描述信息
+
+## SEO 最佳實踐
+
+### 頁面優化
+
+- 每個頁面都應有唯一的 `<title>` 和 meta description
+- 使用語義化 HTML 標籤（如 `<header>`, `<nav>`, `<main>`, `<footer>`）
+- 確保頁面加載速度快，圖片已優化
+- 實現響應式設計，適配各種設備
+
+### 內容優化
+
+- 使用適當的標題層級（h1, h2, h3...）
+- 內容應包含相關關鍵詞，但避免關鍵詞堆砌
+- 定期更新網站內容，保持新鮮度
+- 添加 alt 屬性到所有圖片
+
+### 技術優化
+
+- 確保所有頁面都有規範的 URL
+- 實現 HTTPS 安全連接
+- 添加 Open Graph 和 Twitter Card 標籤，優化社交媒體分享
+- 使用 `<link rel="canonical">` 避免重複內容
+- 實現漸進式網頁應用（PWA）功能，提升用戶體驗
