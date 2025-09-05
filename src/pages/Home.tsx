@@ -209,6 +209,7 @@ const Home = () => {
                 <Box
                   component="img"
                   src={item.image}
+                  alt={`${item.title} - ${item.description}`}
                   sx={{
                     width: '100%',
                     height: 'auto',  // 改為自動高度
