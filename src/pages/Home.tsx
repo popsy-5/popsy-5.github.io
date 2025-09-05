@@ -126,7 +126,17 @@ const achievements = [
     title: '雄爭舞鬥',
     award: '晉級決賽',
     year: '2024'
-  }
+  },
+  {
+    title: '第22屆新光盃熱門街舞大賽 UN組決賽',
+    award: '榮獲評審團獎',
+    year: '2025'
+  },
+  {
+    title: '第20屆捷運盃街舞大賽 ADULT 組 (初賽)',
+    award: '榮獲舞出勇敢獎',
+    year: '2025'
+  },
 ]
 
 // 成就數據接口
