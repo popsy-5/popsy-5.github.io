@@ -71,7 +71,7 @@ const Contact = () => {
                   Instagram
                 </Typography>
                 <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
-                @popsy_dancecrew
+                popsy_dancecrew
                 </Typography>
                 <Button variant="contained" color="primary" fullWidth href="https://www.instagram.com/popsy_dancecrew/?igsh=ZGo4eGR4MjJvbnR4#" target="_blank" rel="noopener noreferrer">
                   前往 Instagram
