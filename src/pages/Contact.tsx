@@ -57,7 +57,7 @@ const Contact = () => {
                 <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
                 popsy0524@gmail.com
                 </Typography>
-                <Button variant="contained" color="primary" fullWidth href="mailto:popsy.dance@gmail.com">
+                <Button variant="contained" color="primary" fullWidth href="mailto:popsy0524@gmail.com">
                   發送信件
                 </Button>
               </CardContent>
