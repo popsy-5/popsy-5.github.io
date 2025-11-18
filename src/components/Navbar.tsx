@@ -19,7 +19,9 @@ const pages = [
   { title: '首頁', path: '/' },
   { title: '團隊介紹', path: '/team' },
   { title: '成員介紹', path: '/members' },
-  { title: '影片展示', path: '/videos' }
+  { title: '影片展示', path: '/videos' },
+  { title: '舞團相關報導', path: '/press' },
+  { title: '聯絡我們', path: '/contact' }
 ]
 
 /**

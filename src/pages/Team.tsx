@@ -52,7 +52,17 @@ const Team = () => {
       year: '2025年8月31日',
       title: '第20屆捷運盃街舞大賽｜排舞 ADULT 組 (初賽)：POPSY ',
       description: '榮獲舞出勇敢獎。'
-    }
+    },
+    {
+      year: '2025年10月25日',
+      title: '總統盃街舞排舞大賽｜排舞 公開組 A/B組 (中區複賽)',
+      description: '榮獲B組中區冠軍 A/B組皆晉級決賽。'
+    },
+    {
+      year: '2025年11月16日',
+      title: '總統盃街舞排舞大賽｜排舞 公開組 A/B組 (決賽)',
+      description: '榮獲公開組B組 季軍，公開組A組 第六名。'
+    },
   ]
 
   return (

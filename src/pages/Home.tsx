@@ -137,6 +137,11 @@ const achievements = [
     award: '榮獲舞出勇敢獎',
     year: '2025'
   },
+  {
+    title: '總統盃 公開組排舞賽B組',
+    award: '中部複賽 冠軍',
+    year: '2025'
+  },
 ]
 
 // 成就數據接口
